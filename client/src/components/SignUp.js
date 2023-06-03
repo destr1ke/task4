@@ -10,7 +10,6 @@ export default function SignUp() {
   };
   function handleSubmit(e) {
     e.preventDefault();
-    console.log(state);
     fetch("/api/signup", {
       method: "POST",
       body: JSON.stringify(state),
