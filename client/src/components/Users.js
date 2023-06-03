@@ -69,7 +69,7 @@ export default function UserTable() {
       (item) => item.email === location.state.email
     );
     if (selectedUsers.length) {
-      navigate("/api/signin");
+      navigate("/signin");
     }
     userAction("/api/user/block", "PUT");
   };
